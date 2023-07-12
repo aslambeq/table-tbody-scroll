@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  position: relative;
+  width: calc(1080px / 2.2);
+  height: calc(1920px / 2.2);
+  padding: 12px;
+
+  background-color: #333;
+
+  display: flex;
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: start; */
+
+  flex-flow: column nowrap;
+}

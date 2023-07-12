@@ -1,0 +1,81 @@
+.table3 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+.table3 .table-title {
+  height: 5%;
+}
+
+.table3 .table-head,
+.table3 .table-footer {
+  display: block;
+  height: 10%;
+}
+
+.table3 thead,
+.table3 tfoot {
+  height: 100%;
+}
+
+.table3 .table-body {
+  /* padding: 4px 0; */
+  display: block;
+  /* max-height: 400px; */
+  height: 75%;
+  /* max-height: 80%; */
+  overflow-y: scroll;
+  /* overflow-x: hidden; */
+
+  scrollbar-gutter: stable;
+}
+
+.table3 tbody {
+}
+
+.table3 th,
+.table3 td {
+  padding: 0 4px;
+}
+
+.table3 thead,
+.table3 tfoot,
+.table3 tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table3 thead,
+.table3 tfoot {
+  padding: 12px 8px 12px 0;
+  /* padding-right: 8px; */
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+
+.table3 .table-body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.table3 .table-body::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: slateblue;
+}
+
+.table3 .table-body::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background: transparent;
+}
+
+.table3 .table-body::-webkit-resizer,
+.table3 .table-body::-webkit-scrollbar-button,
+.table3 .table-body::-webkit-scrollbar-corner,
+.table3 .table-body::-webkit-scrollbar-track-piece {
+  display: none;
+}
