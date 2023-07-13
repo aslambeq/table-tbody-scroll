@@ -81,7 +81,7 @@
   align-items: center;
 }
 
-.app__title,
+.app__header,
 .app__footer {
   width: calc(100% - 2 * var(--app__container__px));
 
@@ -95,7 +95,7 @@
   place-content: center;
 }
 
-.app__title {
+.app__header {
   top: 8px;
   height: var(--app__title__height);
   background-color: sandybrown;
@@ -111,8 +111,7 @@
   height: 100%;
   width: 100%;
   flex: 1;
-  /* padding-top: 16px; */
-  /* padding-bottom: 12px; */
+  overflow: hidden;
 
   border: 1px solid tomato;
   display: flex;
@@ -120,10 +119,17 @@
   align-items: center;
 }
 
+.app__container-content-title {
+  font-size: 2.4em;
+  margin: 0.2em 0;
+}
+
 .app__table-container {
   height: 100%;
   width: 100%;
   flex: 1;
+
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;

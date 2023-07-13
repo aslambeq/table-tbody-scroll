@@ -49,6 +49,7 @@
 .table3 .table-head,
 .table3 .table-footer {
   display: block;
+  overflow: hidden;
 }
 
 .table3 thead,
