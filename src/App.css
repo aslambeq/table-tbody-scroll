@@ -14,9 +14,51 @@
   background-color: #333;
 
   display: flex;
-  /* flex-direction: column;
+  flex-direction: column;
   align-items: center;
-  justify-content: start; */
+  justify-content: start;
 
-  flex-flow: column nowrap;
+  border-radius: 0.4rem;
+
+  /* flex-flow: column nowrap; */
+}
+
+.app__hero {
+  background-color: slateblue;
+  width: 100%;
+  height: 200px;
+  margin: 10px 0;
+  padding: 10px 0;
+  border: 2px solid salmon;
+  isolation: isolate;
+  border-radius: 0.4rem;
+}
+
+.app__table-container {
+  overflow: hidden;
+  background-color: #444;
+  padding: 8px;
+  border-radius: 0.4rem;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.app__table-kek-title {
+  width: 100%;
+  height: 60px;
+  background-color: sandybrown;
+}
+
+.app__table-kek-footer {
+  width: 100%;
+  height: 40px;
+  background-color: coral;
 }

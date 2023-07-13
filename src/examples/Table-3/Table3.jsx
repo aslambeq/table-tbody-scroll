@@ -62,7 +62,9 @@ const Table3 = () => {
 
   return (
     <table className='table3'>
-      <div className='table-title'>Users list</div>
+      <div className='table-title'>
+        <caption>Users list</caption>
+      </div>
       <div className='table-head'>
         <thead>
           {table.getHeaderGroups().map((headerGroup) => (

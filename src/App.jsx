@@ -8,7 +8,12 @@ function App() {
     <div className='app'>
       {/* <Table1 /> */}
       {/* <Table2 /> */}
-      <Table3 />
+      <div className='app__hero'>kek</div>
+      <div className='app__table-container'>
+        <div className='app__table-kek-title'></div>
+        <Table3 />
+        <div className='app__table-kek-footer'></div>
+      </div>
     </div>
   )
 }
