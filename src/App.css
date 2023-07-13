@@ -10,6 +10,11 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
+
+  --app__container__px: 8px;
+  --app__container__py: 8px;
+  --app__title__height: 60px;
+  --app__footer__height: 60px;
 }
 
 .app__content {
@@ -43,11 +48,79 @@
   border-radius: 0.4rem;
 }
 
-.app__table-container {
+.app__provider {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__container {
   overflow: hidden;
+  position: relative;
   background-color: #444;
-  padding: 8px;
+  padding-top: calc(
+    16px + var(--app__container__py) + var(--app__title__height)
+  );
+  padding-left: var(--app__container__px);
+  padding-right: var(--app__container__px);
+  padding-bottom: calc(
+    12px + var(--app__container__py) + var(--app__footer__height)
+  );
   border-radius: 0.4rem;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.app__title,
+.app__footer {
+  width: calc(100% - 2 * var(--app__container__px));
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  display: flex;
+  place-items: center;
+  place-content: center;
+}
+
+.app__title {
+  top: 8px;
+  height: var(--app__title__height);
+  background-color: sandybrown;
+}
+
+.app__footer {
+  bottom: 8px;
+  height: var(--app__footer__height);
+  background-color: coral;
+}
+
+.app__container-content {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  /* padding-top: 16px; */
+  /* padding-bottom: 12px; */
+
+  border: 1px solid tomato;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__table-container {
   height: 100%;
   width: 100%;
   flex: 1;
@@ -56,20 +129,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  gap: 12px;
 }
 
-.app__table-kek-title {
+.app__table-wrapper {
+  height: 100%;
   width: 100%;
-  height: 60px;
-  background-color: sandybrown;
-}
+  flex: 1;
 
-.app__table-kek-footer {
-  width: 100%;
-  height: 40px;
-  background-color: coral;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .app__resizer {

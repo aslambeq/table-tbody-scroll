@@ -13,8 +13,15 @@
   --table-title__height: 40px;
 }
 
+/* .table3 .table-head table,
+.table3 .table-footer table {
+  height: 100%;
+} */
+
 .table3 table {
   width: 100%;
+  height: 100%;
+
   table-layout: auto;
   border-collapse: collapse;
 }

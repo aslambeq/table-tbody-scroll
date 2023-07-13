@@ -62,9 +62,7 @@ const Table3 = () => {
   return (
     <div className="table3">
       <div className="table-title">
-        <table>
-          <caption>Users list</caption>
-        </table>
+        Users list
       </div>
       <div className="table-head">
         <table>
