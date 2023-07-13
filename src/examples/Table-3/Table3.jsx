@@ -16,7 +16,6 @@ const columns = [
     width: '100%',
     cell: (info) => info.getValue(),
     footer: (info) => {
-      console.log('info : ', info)
       return info.column.id
     }
   }),
