@@ -62,14 +62,10 @@
   overflow: hidden;
   position: relative;
   background-color: #444;
-  padding-top: calc(
-    16px + var(--app__container__py) + var(--app__title__height)
-  );
+  padding-top: var(--app__container__py);
   padding-left: var(--app__container__px);
   padding-right: var(--app__container__px);
-  padding-bottom: calc(
-    12px + var(--app__container__py) + var(--app__footer__height)
-  );
+  padding-bottom: var(--app__container__py);
   border-radius: 0.4rem;
   height: 100%;
   width: 100%;
@@ -77,31 +73,26 @@
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
 .app__header,
 .app__footer {
-  width: calc(100% - 2 * var(--app__container__px));
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-
+  width: 100%;
   display: flex;
   place-items: center;
   place-content: center;
 }
 
 .app__header {
+  margin-bottom: 16px;
   top: 8px;
   height: var(--app__title__height);
   background-color: sandybrown;
 }
 
 .app__footer {
+  margin-top: 12px;
   bottom: 8px;
   height: var(--app__footer__height);
   background-color: coral;
@@ -135,6 +126,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  padding: 0 4px;
 }
 
 .app__table-wrapper {
