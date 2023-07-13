@@ -13,6 +13,12 @@
   --table-title__height: 40px;
 }
 
+.table3 table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
 .table3 .table-title {
   display: flex;
   justify-content: center;
